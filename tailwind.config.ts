@@ -33,6 +33,10 @@ module.exports = {
         },
         silver: {
           50: "#e3e4e5",
+          100: "#D3D3D3",
+        },
+        nightblue: {
+          50: "#252850",
         },
       },
       backgroundImage: {
