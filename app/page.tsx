@@ -4,20 +4,17 @@ import Section from "@/components/Section";
 import { GiPartyPopper, GiLargeDress } from "react-icons/gi";
 import { FaMusic, FaGlassCheers } from "react-icons/fa";
 
-import BackgroundImage from "../public/assets/party-zakynthos-welcometozante.jpg";
-import Image from "next/image";
+import BackgroundImage from "../public/assets/starry.jpg";
+
 import Footer from "@/components/Footer";
+import BackgroundImageComponent from "@/components/BackgroundImage";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Section />
-      <div className="absolute z-[-1] w-full">
-        <div className="fixed top-0 left-0 w-full h-full">
-          <Image src={BackgroundImage} alt="test" objectFit="cover" fill />
-        </div>
-      </div>
+      <BackgroundImageComponent image={BackgroundImage} />
       <ContentBlock
         Icon={GiPartyPopper}
         text="¡Te espero el Viernes 1 de Marzo de 2024 para festejar este gran momento de mi vida! Quinta Norte, Río Cuarto, Córdoba. Clickeá en el botón de abajo y encontrá las indicaciones para llegar!"

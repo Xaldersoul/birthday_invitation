@@ -19,7 +19,6 @@ const ContentBlock = ({
   btnText,
   url,
   transparent = false,
-  pair = false,
   alt = false,
 }: Props) => {
   return (
@@ -31,19 +30,19 @@ const ContentBlock = ({
       } ${alt && "bg-silver-50"}`}
     >
       <div
-        className={`flex flex-col items-center justify-center ${
-          pair ? "w-3/4" : "w-1/2"
-        } gap-6`}
+        className={`flex flex-col items-center justify-center w-5/6 sm:w-1/2 gap-6`}
       >
         {Icon && (
           <Icon
-            className={`text-8xl ${
+            className={`text-7xl sm:text-8xl ${
               alt ? "text-nightblue-50" : "text-silver-50"
             }`}
           />
         )}
         <h2
-          className={`text-3xl ${alt ? "text-nightblue-50" : "text-silver-50"}`}
+          className={`text-xl text-center sm:text-3xl ${
+            alt ? "text-nightblue-50" : "text-silver-50"
+          }`}
         >
           {title}
         </h2>

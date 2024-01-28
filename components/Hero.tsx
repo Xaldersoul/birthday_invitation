@@ -3,17 +3,19 @@
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [opacity, setOpacity] = useState<1 | 0>(0);
+  const [loaded, setLoaded] = useState<boolean>(false);
 
   useEffect(() => {
-    setOpacity(1);
+    const timeout = setTimeout(() => {
+      setLoaded(true);
+    }, 500);
   }, []);
   return (
-    <div
-      className={`h-screen flex flex-col items-center justify-center bg-nightblue-50`}
-    >
+    <div className={`h-screen flex flex-col items-center justify-center`}>
       <div
-        className={`opacity-${opacity} transition-opacity duration-[3000ms] flex flex-col items-center justify-center`}
+        className={`transition-opacity duration-1000 ${
+          loaded ? "opacity-100" : "opacity-0"
+        } flex flex-col items-center justify-center`}
       >
         <p className="font-great-vibes text-8xl sm:text-[10rem] text-silver-50">
           Caro
