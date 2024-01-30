@@ -27,7 +27,7 @@ export default function Home() {
         title="CONFIRMACIÓN DE ASISTENCIA"
         btnText="CONFIRMAR ASISTENCIA"
         alt
-        url="https://www.google.com/maps/place/QUINTA+NORTE/@-33.0770658,-64.3538939,17z/data=!4m6!3m5!1s0x95cdffb035a0497f:0x8b92901c2b6495eb!8m2!3d-33.0770658!4d-64.3538939!16s%2Fg%2F11gr3s03p4?entry=ttu"
+        url="https://docs.google.com/forms/d/e/1FAIpQLScGV3qXVLO5vdpg16u5OEG63L56eTsXfI4aQDYWRDsQmv4aCQ/viewform"
       />
       <ContentBlock
         Icon={FaMusic}
@@ -35,6 +35,7 @@ export default function Home() {
         title="¡MUESTRAME TUS GUSTOS!"
         btnText="SUGERIR CANCIÓN"
         transparent
+        url="https://docs.google.com/forms/d/e/1FAIpQLSeZUBN7JFagJ6Mn30gVakyxLbFTKkLk7Y4zmz1jGkJGE0yQig/viewform"
       />
       <ContentBlock
         Icon={GiLargeDress}

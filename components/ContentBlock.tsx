@@ -8,7 +8,6 @@ interface Props {
   btnText?: string;
   url?: string;
   transparent?: boolean;
-  pair?: boolean;
   alt?: boolean;
 }
 
