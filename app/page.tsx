@@ -17,7 +17,7 @@ export default function Home() {
       <BackgroundImageComponent image={BackgroundImage} />
       <ContentBlock
         Icon={GiPartyPopper}
-        text="¡Te espero el Viernes 1 de Marzo de 2024 para festejar este gran momento de mi vida! Quinta Norte, Río Cuarto, Córdoba. Clickeá en el botón de abajo y encontrá las indicaciones para llegar!"
+        text="¡Te espero el Viernes 1 de Marzo de 2024 para festejar este gran momento de mi vida! Quinta Norte, Río Cuarto, Córdoba. Clickeá en el botón de abajo y encontrá las indicaciones para llegar, confirmar asistencia antes del 26/2!"
         title="FIESTA"
         btnText="CÓMO LLEGAR"
         url="https://www.google.com/maps/place/QUINTA+NORTE/@-33.0770658,-64.3538939,17z/data=!4m6!3m5!1s0x95cdffb035a0497f:0x8b92901c2b6495eb!8m2!3d-33.0770658!4d-64.3538939!16s%2Fg%2F11gr3s03p4?entry=ttu"
@@ -45,7 +45,7 @@ export default function Home() {
       <ContentBlock
         Icon={FaGlassCheers}
         title="CENA Y BRINDIS"
-        text="¡La cena tendra una costo de 14.000 y el brindis 7.000 pesos respectivamente!"
+        text="¡La cena tendra una costo de 14.000 (21:00 - 04:00) y el brindis 7.000 pesos (00:00 - 04:00) respectivamente!"
         alt
       />
       <ContentBlock text="¡Gracias por acompañarme en este momento tan importante de mi vida!" />
