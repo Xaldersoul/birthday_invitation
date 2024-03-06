@@ -38,7 +38,20 @@ const CountdownTimer: React.FC = () => {
 
   return (
     <>
-      <p className="text-4xl text-nightblue-50">{`${timeRemaining.days} : ${timeRemaining.hours} : ${timeRemaining.minutes} : ${timeRemaining.seconds}`}</p>
+      {timeRemaining.days +
+        timeRemaining.hours +
+        timeRemaining.minutes +
+        timeRemaining.seconds <=
+      0 ? (
+        <p className="text-4xl text-nightblue-50">
+          El gran dia finalmente llegó!
+        </p>
+      ) : (
+        <>
+          <h1 className="font-semibold">El dia se acerca...</h1>
+          <p className="text-4xl text-nightblue-50">{`${timeRemaining.days} : ${timeRemaining.hours} : ${timeRemaining.minutes} : ${timeRemaining.seconds}`}</p>
+        </>
+      )}
     </>
   );
 };
